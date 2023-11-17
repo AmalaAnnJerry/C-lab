@@ -104,7 +104,8 @@ case '^':while(!isempty()&&instackp(peek())>inputp(token))
          post[j++]=pop();
          push(token);
          break;
-case ')':while((c=pop())!='(')        post[j++]=c;
+case ')':while((c=pop())!='(')
+         post[j++]=c;
          break;
 default :post[j++]=token;
             }
