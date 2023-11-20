@@ -110,7 +110,13 @@ case ')':while((c=pop())!='(')
 default :post[j++]=token;
             }
 printf("\nToken is %c",token); 
-displaystack() ;
+printf("\tStack:\t");
+for(int x=0;x<=top;x++) 
+    printf("%c",S[x]);
+printf("\tPostfix:\t");
+for(int x=0;x<j;x++) 
+    printf("%c",post[x]);  
+printf("\n");    
 i++;
 }
 while(!isempty())
